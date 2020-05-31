@@ -13,7 +13,8 @@ if [ -z "$INPUT_STRING" ];then
         exit 0
 fi
 for dir1 in {0..5} s
-domkdir $INPUT_STRING${dir1}
+do
+    mkdir $INPUT_STRING${dir1}
                 for dir2 in 0 1 2 3 4 5 s
                 do
                         mkdir $INPUT_STRING${dir1}/${dir2}
